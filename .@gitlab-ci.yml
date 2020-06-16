@@ -1,0 +1,7 @@
+stages:
+- test
+postman-tests:
+stage: test
+image: postman/newman_alpine
+script: 
+  - newman --version
